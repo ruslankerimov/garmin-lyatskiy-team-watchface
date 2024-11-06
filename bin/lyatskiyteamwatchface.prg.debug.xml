@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/orion/garmin/lyatskiy-team-watchface/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="1" lineNum="7" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="3" lineNum="6" parent="globals/LyatskiyTeamWatchFaceView" pc="268435503" symbol="&lt;init&gt;"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="4" lineNum="14" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435522" symbol="onStart"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="5" lineNum="27" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435525" symbol="onSettingsChanged"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="5" lineNum="28" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435527" symbol="onSettingsChanged"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="6" lineNum="22" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435544" symbol="getInitialView"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="6" lineNum="23" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435546" symbol="getInitialView"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="7" lineNum="9" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435587" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="7" lineNum="10" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435589" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceApp.mc" id="8" lineNum="18" parent="globals/LyatskiyTeamWatchFaceApp" pc="268435608" symbol="onStop"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="683" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435611" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="684" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435623" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="685" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435633" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="686" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435658" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="687" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435677" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="689" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435701" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="690" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435725" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="9" lineNum="693" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435778" symbol="getAngledLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="314" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435781" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="315" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435793" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="317" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435819" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="318" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435829" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="319" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435839" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="320" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435849" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="326" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435859" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="327" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435872" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="329" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435885" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="330" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435896" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="331" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435909" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="333" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435922" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="334" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435935" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="335" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435957" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="339" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435982" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="340" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268435995" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="341" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436008" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="342" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436015" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="344" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436022" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="345" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436030" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="346" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436034" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="348" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436044" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="349" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436048" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="352" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436055" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="353" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436062" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="354" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436075" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="357" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436088" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="358" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436102" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="10" lineNum="360" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436118" symbol="createLogoOnScreen"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="527" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436121" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="529" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436133" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="531" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436140" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="532" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436142" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="546" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436162" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="554" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436182" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="570" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436202" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="586" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436222" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="600" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436242" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="616" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436262" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="632" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436282" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="642" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436302" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="660" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436322" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="676" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436342" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="533" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436345" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="545" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436723" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="547" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436726" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="553" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436882" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="555" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268436885" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="569" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268437391" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="571" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268437394" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="585" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268437912" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="587" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268437915" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="599" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268438353" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="601" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268438356" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="615" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268438862" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="617" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268438865" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="631" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268439365" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="633" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268439368" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="641" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268439598" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="643" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268439601" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="659" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440211" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="661" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440214" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="675" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440726" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="677" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440729" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="11" lineNum="680" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440738" symbol="getLetterPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="12" lineNum="520" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440741" symbol="shiftPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="12" lineNum="521" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440753" symbol="shiftPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="12" lineNum="522" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440777" symbol="shiftPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="12" lineNum="523" parent="globals/LyatskiyTeamWatchFaceLogo" pc="268440796" symbol="shiftPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="27" parent="globals/LyatskiyTeamWatchFaceView" pc="268440829" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="28" parent="globals/LyatskiyTeamWatchFaceView" pc="268440831" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="29" parent="globals/LyatskiyTeamWatchFaceView" pc="268440839" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="30" parent="globals/LyatskiyTeamWatchFaceView" pc="268440872" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="31" parent="globals/LyatskiyTeamWatchFaceView" pc="268440905" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="34" parent="globals/LyatskiyTeamWatchFaceView" pc="268440951" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="50" parent="globals/LyatskiyTeamWatchFaceView" pc="268441144" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="15" lineNum="51" parent="globals/LyatskiyTeamWatchFaceView" pc="268441155" symbol="onLayout"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="103" parent="globals/LyatskiyTeamWatchFaceView" pc="268441173" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="104" parent="globals/LyatskiyTeamWatchFaceView" pc="268441175" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="105" parent="globals/LyatskiyTeamWatchFaceView" pc="268441203" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="106" parent="globals/LyatskiyTeamWatchFaceView" pc="268441242" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="107" parent="globals/LyatskiyTeamWatchFaceView" pc="268441281" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="108" parent="globals/LyatskiyTeamWatchFaceView" pc="268441320" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="16" lineNum="109" parent="globals/LyatskiyTeamWatchFaceView" pc="268441359" symbol="drawDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="82" parent="globals/LyatskiyTeamWatchFaceView" pc="268441399" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="83" parent="globals/LyatskiyTeamWatchFaceView" pc="268441403" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="84" parent="globals/LyatskiyTeamWatchFaceView" pc="268441420" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="85" parent="globals/LyatskiyTeamWatchFaceView" pc="268441430" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="87" parent="globals/LyatskiyTeamWatchFaceView" pc="268441440" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="88" parent="globals/LyatskiyTeamWatchFaceView" pc="268441476" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="91" parent="globals/LyatskiyTeamWatchFaceView" pc="268441489" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="92" parent="globals/LyatskiyTeamWatchFaceView" pc="268441499" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="93" parent="globals/LyatskiyTeamWatchFaceView" pc="268441512" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="94" parent="globals/LyatskiyTeamWatchFaceView" pc="268441522" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="96" parent="globals/LyatskiyTeamWatchFaceView" pc="268441535" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="97" parent="globals/LyatskiyTeamWatchFaceView" pc="268441563" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="98" parent="globals/LyatskiyTeamWatchFaceView" pc="268441599" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="99" parent="globals/LyatskiyTeamWatchFaceView" pc="268441635" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="17" lineNum="100" parent="globals/LyatskiyTeamWatchFaceView" pc="268441671" symbol="drawHoursAndMinutesDigits"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="19" lineNum="74" parent="globals/LyatskiyTeamWatchFaceView" pc="268441708" symbol="drawLetters"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="19" lineNum="75" parent="globals/LyatskiyTeamWatchFaceView" pc="268441710" symbol="drawLetters"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="19" lineNum="76" parent="globals/LyatskiyTeamWatchFaceView" pc="268441738" symbol="drawLetters"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="19" lineNum="78" parent="globals/LyatskiyTeamWatchFaceView" pc="268441767" symbol="drawLetters"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="19" lineNum="79" parent="globals/LyatskiyTeamWatchFaceView" pc="268441792" symbol="drawLetters"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="12" parent="globals/LyatskiyTeamWatchFaceView" pc="268441822" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="13" parent="globals/LyatskiyTeamWatchFaceView" pc="268441824" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="16" parent="globals/LyatskiyTeamWatchFaceView" pc="268441842" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="17" parent="globals/LyatskiyTeamWatchFaceView" pc="268441857" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="19" parent="globals/LyatskiyTeamWatchFaceView" pc="268441894" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="22" parent="globals/LyatskiyTeamWatchFaceView" pc="268441907" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="20" lineNum="23" parent="globals/LyatskiyTeamWatchFaceView" pc="268441964" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="22" lineNum="62" parent="globals/LyatskiyTeamWatchFaceView" pc="268442003" symbol="onUpdate"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="22" lineNum="63" parent="globals/LyatskiyTeamWatchFaceView" pc="268442005" symbol="onUpdate"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="22" lineNum="64" parent="globals/LyatskiyTeamWatchFaceView" pc="268442033" symbol="onUpdate"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="22" lineNum="66" parent="globals/LyatskiyTeamWatchFaceView" pc="268442045" symbol="onUpdate"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="22" lineNum="67" parent="globals/LyatskiyTeamWatchFaceView" pc="268442059" symbol="onUpdate"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceView.mc" id="22" lineNum="68" parent="globals/LyatskiyTeamWatchFaceView" pc="268442073" symbol="onUpdate"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="23" lineNum="219" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442088" symbol="setParamA"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="23" lineNum="220" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442090" symbol="setParamA"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="24" lineNum="236" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442101" symbol="getPoint"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="24" lineNum="237" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442103" symbol="getPoint"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="25" lineNum="251" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442208" symbol="getLetterLPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="25" lineNum="252" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442212" symbol="getLetterLPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="25" lineNum="254" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442220" symbol="getLetterLPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="25" lineNum="255" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442238" symbol="getLetterLPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="25" lineNum="261" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442348" symbol="getLetterLPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="26" lineNum="228" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442351" symbol="getWidth"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="26" lineNum="229" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442353" symbol="getWidth"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="27" lineNum="247" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442404" symbol="getRadius"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="27" lineNum="248" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442406" symbol="getRadius"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="28" lineNum="296" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442457" symbol="getLetterPointsInDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="28" lineNum="297" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442461" symbol="getLetterPointsInDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="28" lineNum="303" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442529" symbol="getLetterPointsInDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="28" lineNum="305" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442550" symbol="getLetterPointsInDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="28" lineNum="310" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442580" symbol="getLetterPointsInDataArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="29" lineNum="232" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442583" symbol="getHeight"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="29" lineNum="233" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442585" symbol="getHeight"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="30" lineNum="223" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442636" symbol="setOffset"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="30" lineNum="224" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442638" symbol="setOffset"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="30" lineNum="225" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442648" symbol="setOffset"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="132" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442659" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="133" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442663" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="134" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442673" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="135" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442683" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="136" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442693" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="137" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442703" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="138" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442713" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="140" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442723" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="142" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442733" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="143" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442743" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="144" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442762" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="145" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442772" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="147" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442791" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="150" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442846" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="151" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442862" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="153" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442893" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="154" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442903" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="156" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442928" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="157" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442947" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="31" lineNum="159" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268442981" symbol="initialize"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="32" lineNum="243" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444494" symbol="getCircleCenterPoint"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="32" lineNum="244" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444496" symbol="getCircleCenterPoint"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="264" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444513" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="265" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444517" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="266" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444525" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="268" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444532" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="269" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444550" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="273" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444647" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="33" lineNum="276" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444670" symbol="getLetterTPoints"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="34" lineNum="279" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444673" symbol="getDigitPointsInClockArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="34" lineNum="280" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444677" symbol="getDigitPointsInClockArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="34" lineNum="286" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444754" symbol="getDigitPointsInClockArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="34" lineNum="288" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444775" symbol="getDigitPointsInClockArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/source/LyatskiyTeamWatchFaceLogo.mc" id="34" lineNum="293" parent="globals/LyatskiyTeamWatchFaceLogo/Logo" pc="268444805" symbol="getDigitPointsInClockArea"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen" id="35" lineNum="13" parent="globals/Rez/Layouts" pc="268444808" symbol="WatchFace"/>
+        <entry filename="/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen" id="35" lineNum="14" parent="globals/Rez/Layouts" pc="268444818" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="22" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_clockAreaDigitHeight&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="23" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_clockAreaDigitWidth&gt;"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="33" method="true" symbol="getLetterLPoints"/>
+        <entry id="44" symbol="shape"/>
+        <entry id="20" method="true" symbol="drawHoursAndMinutesDigits"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="40" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="37" method="true" symbol="getRadius"/>
+        <entry id="45" symbol="padding"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="30" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_points&gt;"/>
+        <entry id="8389117" method="true" symbol="getWidth"/>
+        <entry id="8390425" module="true" symbol="Properties"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="17" symbol="&lt;globals/LyatskiyTeamWatchFaceView/&lt;&gt;_foregroundColor&gt;"/>
+        <entry id="31" method="true" symbol="getCircleCenterPoint"/>
+        <entry id="12" method="true" symbol="getAngledLetterPoints"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="38" method="true" symbol="setParamA"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry id="7" object="true" symbol="LyatskiyTeamWatchFaceApp"/>
+        <entry id="50" symbol="k5"/>
+        <entry id="49" symbol="k4"/>
+        <entry id="48" symbol="k3"/>
+        <entry id="47" symbol="k2"/>
+        <entry id="46" symbol="k1"/>
+        <entry id="8" module="true" symbol="LyatskiyTeamWatchFaceLogo"/>
+        <entry id="2" module="true" symbol="globals/LyatskiyTeamWatchFaceLogo"/>
+        <entry id="51" symbol="alpha"/>
+        <entry id="14" method="true" symbol="shiftPoints"/>
+        <entry id="32" method="true" symbol="getDigitPointsInClockArea"/>
+        <entry id="11" method="true" symbol="createLogoOnScreen"/>
+        <entry field="true" id="43" symbol="ColorWhite"/>
+        <entry field="true" id="42" symbol="ColorBlack"/>
+        <entry id="10" object="true" symbol="Logo"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389116" method="true" symbol="getHeight"/>
+        <entry id="13" method="true" symbol="getLetterPoints"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8391780" method="true" symbol="setOffset"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="19" method="true" symbol="drawDataArea"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="39" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="24" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_dataAreaLetterHeight&gt;"/>
+        <entry id="21" method="true" symbol="drawLetters"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="41" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="16" symbol="&lt;globals/LyatskiyTeamWatchFaceView/&lt;&gt;_backgroundColor&gt;"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="29" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_paramAlpha&gt;"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="8391701" method="true" symbol="setAntiAlias"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="36" method="true" symbol="getPoint"/>
+        <entry field="true" id="25" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_dataAreaLetterWidth&gt;"/>
+        <entry field="true" id="27" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_offsetY&gt;"/>
+        <entry field="true" id="26" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_offsetX&gt;"/>
+        <entry id="15" module="true" symbol="Layouts"/>
+        <entry id="9" object="true" symbol="LyatskiyTeamWatchFaceView"/>
+        <entry id="35" method="true" symbol="getLetterTPoints"/>
+        <entry field="true" id="18" symbol="&lt;globals/LyatskiyTeamWatchFaceView/&lt;&gt;_logo&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="34" method="true" symbol="getLetterPointsInDataArea"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="28" symbol="&lt;globals/LyatskiyTeamWatchFaceLogo/Logo/&lt;&gt;_paramA&gt;"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435780" name="letter" stackId="1" startPc="268435611"/>
+        <entry arg="true" endPc="268435780" name="width" stackId="2" startPc="268435611"/>
+        <entry arg="true" endPc="268435780" name="height" stackId="3" startPc="268435611"/>
+        <entry arg="true" endPc="268435780" name="k" stackId="4" startPc="268435611"/>
+        <entry arg="true" endPc="268435780" name="alpha" stackId="5" startPc="268435611"/>
+        <entry endPc="268435780" name="alphaInRadian" stackId="6" startPc="268435623"/>
+        <entry endPc="268435780" name="scaleCoef" stackId="7" startPc="268435623"/>
+        <entry endPc="268435780" name="slideCoef" stackId="8" startPc="268435623"/>
+        <entry endPc="268435780" name="points" stackId="9" startPc="268435623"/>
+        <entry endPc="268435777" name="j" stackId="10" startPc="268435725"/>
+        <entry arg="true" endPc="268436120" name="logoParams" stackId="1" startPc="268435781"/>
+        <entry arg="true" endPc="268436120" name="screenParams" stackId="2" startPc="268435781"/>
+        <entry endPc="268436120" name="logo" stackId="3" startPc="268435793"/>
+        <entry endPc="268436120" name="deviceScreenWidth" stackId="4" startPc="268435793"/>
+        <entry endPc="268436120" name="deviceScreenHeight" stackId="5" startPc="268435793"/>
+        <entry endPc="268436120" name="deviceScreenShape" stackId="6" startPc="268435793"/>
+        <entry endPc="268436120" name="deviceScreenPadding" stackId="7" startPc="268435793"/>
+        <entry endPc="268436120" name="logoParamA" stackId="8" startPc="268435793"/>
+        <entry endPc="268436120" name="offsetX" stackId="9" startPc="268435793"/>
+        <entry endPc="268436120" name="offsetY" stackId="10" startPc="268435793"/>
+        <entry endPc="268436120" name="screenWidth" stackId="11" startPc="268435793"/>
+        <entry endPc="268436120" name="screenHeight" stackId="12" startPc="268435793"/>
+        <entry endPc="268435978" name="logoCenterPointByParamA" stackId="13" startPc="268435896"/>
+        <entry endPc="268435978" name="logoRadiusByParamA" stackId="14" startPc="268435896"/>
+        <entry endPc="268436087" name="logoHeight" stackId="15" startPc="268435982"/>
+        <entry endPc="268436087" name="logoWidth" stackId="16" startPc="268435982"/>
+        <entry endPc="268436087" name="logoWidthByParamA" stackId="17" startPc="268435982"/>
+        <entry endPc="268436087" name="logoHeightByParamA" stackId="18" startPc="268435982"/>
+        <entry endPc="268436087" name="logoSizeRatio" stackId="19" startPc="268435982"/>
+        <entry endPc="268436087" name="deviceScreenSizeRatio" stackId="20" startPc="268435982"/>
+        <entry arg="true" endPc="268440740" name="letter" stackId="1" startPc="268436121"/>
+        <entry arg="true" endPc="268440740" name="width" stackId="2" startPc="268436121"/>
+        <entry arg="true" endPc="268440740" name="height" stackId="3" startPc="268436121"/>
+        <entry arg="true" endPc="268440740" name="k" stackId="4" startPc="268436121"/>
+        <entry endPc="268440740" name="points" stackId="5" startPc="268436133"/>
+        <entry endPc="268440740" name="paramA" stackId="6" startPc="268436133"/>
+        <entry arg="true" endPc="268440828" name="points" stackId="1" startPc="268440741"/>
+        <entry arg="true" endPc="268440828" name="sx" stackId="2" startPc="268440741"/>
+        <entry arg="true" endPc="268440828" name="sy" stackId="3" startPc="268440741"/>
+        <entry endPc="268440827" name="i" stackId="4" startPc="268440777"/>
+        <entry arg="true" endPc="268441172" name="dc" stackId="1" startPc="268440829"/>
+        <entry arg="true" endPc="268441398" name="dc" stackId="1" startPc="268441173"/>
+        <entry arg="true" endPc="268441707" name="dc" stackId="1" startPc="268441399"/>
+        <entry endPc="268441706" name="clockTime" stackId="2" startPc="268441403"/>
+        <entry endPc="268441706" name="hour" stackId="3" startPc="268441403"/>
+        <entry endPc="268441706" name="min" stackId="4" startPc="268441403"/>
+        <entry endPc="268441706" name="hour2" stackId="5" startPc="268441403"/>
+        <entry endPc="268441706" name="hour1" stackId="6" startPc="268441403"/>
+        <entry endPc="268441706" name="min2" stackId="7" startPc="268441403"/>
+        <entry endPc="268441706" name="min1" stackId="8" startPc="268441403"/>
+        <entry arg="true" endPc="268441821" name="dc" stackId="1" startPc="268441708"/>
+        <entry arg="true" endPc="268442087" name="dc" stackId="1" startPc="268442003"/>
+        <entry arg="true" endPc="268442100" name="value" stackId="1" startPc="268442088"/>
+        <entry arg="true" endPc="268442207" name="num" stackId="1" startPc="268442101"/>
+        <entry endPc="268442350" name="points" stackId="1" startPc="268442212"/>
+        <entry endPc="268442347" name="i" stackId="2" startPc="268442238"/>
+        <entry arg="true" endPc="268442582" name="letter" stackId="1" startPc="268442457"/>
+        <entry arg="true" endPc="268442582" name="position" stackId="2" startPc="268442457"/>
+        <entry endPc="268442582" name="points" stackId="3" startPc="268442461"/>
+        <entry endPc="268442582" name="reperPoint" stackId="4" startPc="268442461"/>
+        <entry arg="true" endPc="268442658" name="x" stackId="1" startPc="268442636"/>
+        <entry arg="true" endPc="268442658" name="y" stackId="2" startPc="268442636"/>
+        <entry arg="true" endPc="268444493" name="params" stackId="1" startPc="268442659"/>
+        <entry endPc="268444492" name="k1" stackId="2" startPc="268442663"/>
+        <entry endPc="268444492" name="k2" stackId="3" startPc="268442663"/>
+        <entry endPc="268444492" name="k3" stackId="4" startPc="268442663"/>
+        <entry endPc="268444492" name="k4" stackId="5" startPc="268442663"/>
+        <entry endPc="268444492" name="k5" stackId="6" startPc="268442663"/>
+        <entry endPc="268444492" name="alpha" stackId="7" startPc="268442663"/>
+        <entry endPc="268444492" name="alphaInRadian" stackId="8" startPc="268442663"/>
+        <entry endPc="268444492" name="tanAlpha" stackId="9" startPc="268442663"/>
+        <entry endPc="268444492" name="ctanAlpha" stackId="10" startPc="268442663"/>
+        <entry endPc="268444492" name="sinAlpha" stackId="11" startPc="268442663"/>
+        <entry endPc="268444492" name="radiusByParamA" stackId="12" startPc="268442663"/>
+        <entry endPc="268444492" name="dataAreaHeight" stackId="13" startPc="268442663"/>
+        <entry endPc="268444492" name="dataAreaWidth" stackId="14" startPc="268442663"/>
+        <entry endPc="268444672" name="points" stackId="1" startPc="268444517"/>
+        <entry endPc="268444672" name="j" stackId="2" startPc="268444517"/>
+        <entry endPc="268444669" name="i" stackId="3" startPc="268444550"/>
+        <entry arg="true" endPc="268444807" name="digit" stackId="1" startPc="268444673"/>
+        <entry arg="true" endPc="268444807" name="position" stackId="2" startPc="268444673"/>
+        <entry endPc="268444807" name="points" stackId="3" startPc="268444677"/>
+        <entry endPc="268444807" name="reperPoint" stackId="4" startPc="268444677"/>
+        <entry arg="true" endPc="268444824" name="dc" stackId="1" startPc="268444808"/>
+    </localVars>
+    <deviceInfo partNumber="006-B2697-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/LyatskiyTeamWatchFaceApp" offset="142" parentId="globals" symbolId="LyatskiyTeamWatchFaceApp" type="class"/>
+        <dataEntry label="globals/LyatskiyTeamWatchFaceLogo" offset="221" parentId="globals" symbolId="LyatskiyTeamWatchFaceLogo" type="module"/>
+        <dataEntry label="globals/Rez" offset="292" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/LyatskiyTeamWatchFaceView" offset="347" parentId="globals" symbolId="LyatskiyTeamWatchFaceView" type="class"/>
+        <dataEntry label="globals/LyatskiyTeamWatchFaceLogo/Logo" offset="490" parentId="LyatskiyTeamWatchFaceLogo" symbolId="Logo" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="697" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="736" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="775" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="LyatskiyTeamWatchFaceApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="LyatskiyTeamWatchFaceLogo">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435502" name="&lt;init&gt;" parent="Rez" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435521" name="&lt;init&gt;" parent="LyatskiyTeamWatchFaceView" startPc="268435503">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="onStart" parent="LyatskiyTeamWatchFaceApp" startPc="268435522">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435543" name="onSettingsChanged" parent="LyatskiyTeamWatchFaceApp" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435586" name="getInitialView" parent="LyatskiyTeamWatchFaceApp" startPc="268435544">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435607" name="initialize" parent="LyatskiyTeamWatchFaceApp" startPc="268435587">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435610" name="onStop" parent="LyatskiyTeamWatchFaceApp" startPc="268435608">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435780" name="getAngledLetterPoints" parent="LyatskiyTeamWatchFaceLogo" startPc="268435611">
+            <param id="letter"/>
+            <param id="width"/>
+            <param id="height"/>
+            <param id="k"/>
+            <param id="alpha"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436120" name="createLogoOnScreen" parent="LyatskiyTeamWatchFaceLogo" startPc="268435781">
+            <param id="logoParams"/>
+            <param id="screenParams"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440740" name="getLetterPoints" parent="LyatskiyTeamWatchFaceLogo" startPc="268436121">
+            <param id="letter"/>
+            <param id="width"/>
+            <param id="height"/>
+            <param id="k"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440828" name="shiftPoints" parent="LyatskiyTeamWatchFaceLogo" startPc="268440741">
+            <param id="points"/>
+            <param id="sx"/>
+            <param id="sy"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Logo">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="LyatskiyTeamWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="LyatskiyTeamWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441172" name="onLayout" parent="LyatskiyTeamWatchFaceView" startPc="268440829">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441398" name="drawDataArea" parent="LyatskiyTeamWatchFaceView" startPc="268441173">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441707" name="drawHoursAndMinutesDigits" parent="LyatskiyTeamWatchFaceView" startPc="268441399">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="LyatskiyTeamWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441821" name="drawLetters" parent="LyatskiyTeamWatchFaceView" startPc="268441708">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442002" name="initialize" parent="LyatskiyTeamWatchFaceView" startPc="268441822">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="LyatskiyTeamWatchFaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442087" name="onUpdate" parent="LyatskiyTeamWatchFaceView" startPc="268442003">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442100" name="setParamA" parent="Logo" startPc="268442088">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442207" name="getPoint" parent="Logo" startPc="268442101">
+            <param id="num"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442350" name="getLetterLPoints" parent="Logo" startPc="268442208">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442403" name="getWidth" parent="Logo" startPc="268442351">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442456" name="getRadius" parent="Logo" startPc="268442404">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442582" name="getLetterPointsInDataArea" parent="Logo" startPc="268442457">
+            <param id="letter"/>
+            <param id="position"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442635" name="getHeight" parent="Logo" startPc="268442583">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442658" name="setOffset" parent="Logo" startPc="268442636">
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444493" name="initialize" parent="Logo" startPc="268442659">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444512" name="getCircleCenterPoint" parent="Logo" startPc="268444494">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444672" name="getLetterTPoints" parent="Logo" startPc="268444513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444807" name="getDigitPointsInClockArea" parent="Logo" startPc="268444673">
+            <param id="digit"/>
+            <param id="position"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444824" name="WatchFace" parent="Layouts" startPc="268444808">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

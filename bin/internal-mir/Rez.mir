@@ -1,0 +1,55 @@
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 12; ]
+    module Layouts {
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 13; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_home_orion_garmin_lyatskiy_team_watchface_bin_gen_006_B2697_00_source_Rez_mcgen_13_73_15_8_start:
+[ "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen" 14 12 ]
+            %tmp.1 = newa 0 Array<WatchUi.Drawable>;
+            ret %tmp.1;
+_home_orion_garmin_lyatskiy_team_watchface_bin_gen_006_B2697_00_source_Rez_mcgen_13_73_15_8_stop:
+        }
+    }
+    [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 18; ]
+    module Strings {
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 19; @position = 27; initialized = true; ]
+        var BackgroundColorTitle as ResourceId;
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 20; @position = 27; initialized = true; ]
+        var ColorBlack as ResourceId;
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 21; @position = 27; initialized = true; ]
+        var ColorWhite as ResourceId;
+        [ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 22; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+}
+[ @file = "/home/orion/garmin/lyatskiy-team-watchface/bin/gen/006-B2697-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
