@@ -2,25 +2,26 @@ import Toybox.Application;
 import Toybox.Graphics;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.Lang;
+import Toybox.Time;
 
 class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
-    private var _logo;
+    private var _logo as LyatskiyTeamWatchFaceLogo.Logo?;
 
-    private var _backgroundColor;
-    private var _foregroundColor;
+    private var _backgroundColor as Graphics.ColorType = Graphics.COLOR_WHITE;
+    private var _foregroundColor as Graphics.ColorType = Graphics.COLOR_BLACK;
 
     function initialize() {
         WatchFace.initialize();
 
         // API Level 2.4.0
         if (Application has :Properties) {
-            _backgroundColor = Application.Properties.getValue("BackgroundColor");
-        } else {
-            _backgroundColor = Graphics.COLOR_WHITE;
-        }
+            _backgroundColor = Application.Properties.getValue("BackgroundColor") as Graphics.ColorType;
 
-        _backgroundColor = (Application has :Properties) ? Application.Properties.getValue("BackgroundColor") : Graphics.COLOR_WHITE;
-        _foregroundColor = _backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_BLACK : Graphics.COLOR_WHITE;
+            if (_backgroundColor == Graphics.COLOR_BLACK) {
+                _foregroundColor = Graphics.COLOR_WHITE;
+            }
+        }
     }
 
     // Load your resources here
@@ -35,9 +36,10 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
             {
                 :k1 => 1.5,
                 :k2 => 4.5,
-                :k3 => 0.1,
-                :k4 => 0.1,
-                :k5 => 0.4,
+                :k3 => 0.15,
+                :k4 => 0.2,
+                :k5 => 0.6,
+                :k6 => 0.1,
                 :alpha => 66
             },
             {
@@ -63,23 +65,27 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
         dc.setColor(_foregroundColor, _backgroundColor);
         dc.clear();
 
-        drawLetters(dc);
-        drawHoursAndMinutesDigits(dc);
-        drawDataArea(dc);
+        _drawMainLetters(dc);
+        _drawClockArea(dc);
+        _drawDateArea(dc);
 
         // Call the parent onUpdate function to redraw the layout
         // View.onUpdate(dc);
     }
 
-    function drawLetters(dc) {
+    private function _drawMainLetters(dc as Graphics.Dc) as Void {
+        var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
+
         dc.setColor(_foregroundColor, _backgroundColor);
-        dc.fillPolygon(_logo.getLetterLPoints());
+        dc.fillPolygon(logo.getLetterLPoints());
 
         dc.setColor(Graphics.COLOR_RED, _backgroundColor);
-        dc.fillPolygon(_logo.getLetterTPoints());
+        dc.fillPolygon(logo.getLetterTPoints());
     }
 
-    function drawHoursAndMinutesDigits(dc) {
+    private function _drawClockArea(dc as Graphics.Dc) as Void {
+        var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
+
         var clockTime = System.getClockTime();
         var hour = clockTime.hour;
         var min = clockTime.min;
@@ -88,25 +94,67 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
             hour -= 12;
         }
 
-        var hour2 = hour % 10;
-        var hour1 = (hour - hour2) / 10;
-        var min2 = min % 10;
-        var min1 = (min - min2) / 10;
+        var hourSecondDigit = hour % 10;
+        var hourFirstDigit = (hour - hourSecondDigit) / 10;
+        var minSecondDigit = min % 10;
+        var minFirstDigit = (min - minSecondDigit) / 10;
 
         dc.setColor(_foregroundColor, _backgroundColor);
-        dc.fillPolygon(_logo.getDigitPointsInClockArea(hour1, 1));
-        dc.fillPolygon(_logo.getDigitPointsInClockArea(hour2, 2));
-        dc.fillPolygon(_logo.getDigitPointsInClockArea(min1, 3));
-        dc.fillPolygon(_logo.getDigitPointsInClockArea(min2, 4));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(hourFirstDigit, 1, 3));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(hourSecondDigit, 2, 3));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(minFirstDigit, 3, 5));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(minSecondDigit, 4, 5));
     }
 
-    function drawDataArea(dc) {
+    private function _drawDateArea(dc as Graphics.Dc) as Void {
+        var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
+
+        var chars = [] as Array<[ Char, Numeric ]>;
+        var dateInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var dayChars = dateInfo.day.toString().toCharArray();
+
+        for (var i = 0; i < dayChars.size(); ++i) {
+            chars.add([ dayChars[i], 3.5 ]);
+        }
+
+        var dow = dateInfo.day_of_week;
+        var dowChars;
+
+        switch (dow) {
+            case 1:
+                dowChars = ['в', 'с'];
+                break;
+            case 2:
+                dowChars = ['п', 'н'];
+                break;
+            case 3:
+                dowChars = ['в', 'т'];
+                break;
+            case 4:
+                dowChars = ['с', 'р'];
+                break;
+            case 5:
+                dowChars = ['ч', 'т'];
+                break;
+            case 6:
+                dowChars = ['п', 'т'];
+                break;
+            case 7:
+                dowChars = ['с', 'б'];
+                break;
+            default:
+                dowChars = ['п', 'н'];
+                break;
+        }
+
+        for (var i = 0; i < dowChars.size(); ++i) {
+            chars.add([ dowChars[i], 6 ]);
+        }
+
         dc.setColor(_foregroundColor, _backgroundColor);
-        dc.fillPolygon(_logo.getLetterPointsInDataArea("3", 1));
-        dc.fillPolygon(_logo.getLetterPointsInDataArea("2", 2));
-        dc.fillPolygon(_logo.getLetterPointsInDataArea("1", 3));
-        dc.fillPolygon(_logo.getLetterPointsInDataArea("4", 4));
-        dc.fillPolygon(_logo.getLetterPointsInDataArea("5", 5));
+        for (var i = 0; i < chars.size(); ++i) {
+            dc.fillPolygon(logo.getCharPointsInDateArea(chars[i][0], i + 1, chars[i][1]));
+        }
     }
 
     // Called when this View is removed from the screen. Save the
