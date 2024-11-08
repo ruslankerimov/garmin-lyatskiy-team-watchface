@@ -111,7 +111,13 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
 
         var chars = [] as Array<[ Char, Numeric ]>;
         var dateInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-        var dayChars = dateInfo.day.toString().toCharArray();
+        var dayStr = dateInfo.day.toString();
+
+        if (dayStr.length() < 2) {
+            dayStr = "0" + dayStr;
+        }
+        
+        var dayChars = dayStr.toCharArray();
 
         for (var i = 0; i < dayChars.size(); ++i) {
             chars.add([ dayChars[i], 3.5 ]);
