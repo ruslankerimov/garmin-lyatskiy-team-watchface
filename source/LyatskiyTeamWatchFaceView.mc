@@ -10,6 +10,9 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
 
     private var _backgroundColor as Graphics.ColorType = Graphics.COLOR_WHITE;
     private var _foregroundColor as Graphics.ColorType = Graphics.COLOR_BLACK;
+    private var _accentColor as Graphics.ColorType = Graphics.COLOR_RED;
+
+    private var _batteryIndicatorWidthRatio as Float = 0.3;
 
     function initialize() {
         WatchFace.initialize();
@@ -38,7 +41,7 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
                 :k2 => 4.5,
                 :k3 => 0.15,
                 :k4 => 0.15,
-                :k5 => 0.6,
+                :k5 => 0.5,
                 :alpha => 66.0
             },
             {
@@ -51,6 +54,8 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
         if (dc has :setAntiAlias) {
             dc.setAntiAlias(true);
         }
+
+        onUpdate(dc);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -65,12 +70,12 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
         dc.clear();
 
         _drawMainLetters(dc);
-        _drawClockArea(dc);
-        _drawDateArea(dc);
-        _drawBatteryIndicator(dc);
 
-        // Call the parent onUpdate function to redraw the layout
-        // View.onUpdate(dc);
+        // _drawDebugLines(dc);
+
+        _drawClockBox(dc);
+        _drawDateBox(dc);
+        _drawBatteryIndicator(dc);
     }
 
     private function _drawMainLetters(dc as Graphics.Dc) as Void {
@@ -79,11 +84,11 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
         dc.setColor(_foregroundColor, _backgroundColor);
         dc.fillPolygon(logo.getLetterLPoints());
 
-        dc.setColor(Graphics.COLOR_RED, _backgroundColor);
+        dc.setColor(_accentColor, _backgroundColor);
         dc.fillPolygon(logo.getLetterTPoints());
     }
 
-    private function _drawClockArea(dc as Graphics.Dc) as Void {
+    private function _drawClockBox(dc as Graphics.Dc) as Void {
         var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
 
         var clockTime = System.getClockTime();
@@ -100,29 +105,16 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
         var minFirstDigit = (min - minSecondDigit) / 10;
 
         dc.setColor(_foregroundColor, _backgroundColor);
-        dc.fillPolygon(logo.getDigitPointsInClockArea(hourFirstDigit, 1, 3));
-        dc.fillPolygon(logo.getDigitPointsInClockArea(hourSecondDigit, 2, 3));
-        dc.fillPolygon(logo.getDigitPointsInClockArea(minFirstDigit, 3, 5));
-        dc.fillPolygon(logo.getDigitPointsInClockArea(minSecondDigit, 4, 5));
-
-        // dc.setColor(Graphics.COLOR_RED, _backgroundColor);
-        // dc.drawCircle(logo.getPoint(17)[0], logo.getPoint(17)[1], 2);
-        // dc.drawCircle(logo.getPoint(18)[0], logo.getPoint(18)[1], 2);
-        // dc.drawCircle(logo.getPoint(19)[0], logo.getPoint(19)[1], 2);
-        // dc.drawCircle(logo.getPoint(20)[0], logo.getPoint(20)[1], 2);
-        // dc.drawCircle(logo.getPoint(26)[0], logo.getPoint(26)[1], 2);
-        // dc.drawCircle(logo.getPoint(27)[0], logo.getPoint(27)[1], 2);
-        // dc.drawCircle(logo.getPoint(28)[0], logo.getPoint(28)[1], 2);
-        // dc.drawCircle(logo.getPoint(29)[0], logo.getPoint(29)[1], 2);
-
-        // dc.setColor(Graphics.COLOR_BLUE, _backgroundColor);
-        // dc.drawLine(logo.getPoint(3)[0], logo.getPoint(3)[1], logo.getPoint(14)[0], logo.getPoint(2)[1]);
+        dc.fillPolygon(logo.getDigitPointsInClockArea(hourFirstDigit, 1, 3.5));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(hourSecondDigit, 2, 3.5));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(minFirstDigit, 3, 7.0));
+        dc.fillPolygon(logo.getDigitPointsInClockArea(minSecondDigit, 4, 7.0));
     }
 
-    private function _drawDateArea(dc as Graphics.Dc) as Void {
+    private function _drawDateBox(dc as Graphics.Dc) as Void {
         var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
 
-        var chars = [] as Array<[ Char, Numeric ]>;
+        var chars = [] as Array<String>;
         var dateInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var dayStr = dateInfo.day.toString();
 
@@ -130,86 +122,118 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
             dayStr = "0" + dayStr;
         }
 
-        var dayChars = dayStr.toCharArray();
-
-        for (var i = 0; i < dayChars.size(); ++i) {
-            chars.add([ dayChars[i], 3.5 ]);
+        for (var i = 0; i < dayStr.length(); ++i) {
+            chars.add(dayStr.substring(i, i + 1) as String);
+            chars.add("");
         }
+
+        chars.add("");
 
         var dow = dateInfo.day_of_week;
         var dowChars;
 
         switch (dow) {
             case 1:
-                dowChars = ['в', 'с'];
+                dowChars = ["в", "с"];
                 break;
             case 2:
-                dowChars = ['п', 'н'];
+                dowChars = ["п", "н"];
                 break;
             case 3:
-                dowChars = ['в', 'т'];
+                dowChars = ["в", "т"];
                 break;
             case 4:
-                dowChars = ['с', 'р'];
+                dowChars = ["с", "р"];
                 break;
             case 5:
-                dowChars = ['ч', 'т'];
+                dowChars = ["ч", "т"];
                 break;
             case 6:
-                dowChars = ['п', 'т'];
+                dowChars = ["п", "т"];
                 break;
             case 7:
-                dowChars = ['с', 'б'];
+                dowChars = ["с", "б"];
                 break;
             default:
-                dowChars = ['п', 'н'];
+                dowChars = ["п", "н"];
                 break;
         }
 
         for (var i = 0; i < dowChars.size(); ++i) {
-            chars.add([ dowChars[i], 6 ]);
+            chars.add("");
+            chars.add(dowChars[i]);
         }
 
-        var areaLeftTopPoint = logo.getPoint(21);
-        var areaRightTopPoint = logo.getPoint(22);
-        var areaLeftBottomPoint = logo.getPoint(24);
+        var boxWidthRatio = 1 - _batteryIndicatorWidthRatio;
+        var boxLeftTopPoint = logo.getPoint(21);
+        var boxLeftBottomPoint = logo.getPoint(24);
+        var point22 = logo.getPoint(22);
+        var boxRightTopPoint = [
+            boxLeftTopPoint[0] + boxWidthRatio * (point22[0] - boxLeftTopPoint[0]),
+            boxLeftTopPoint[1] + boxWidthRatio * (point22[1] - boxLeftTopPoint[1])
+        ];
 
-        var areaWidth = areaRightTopPoint[0] - areaLeftTopPoint[0];
-        var areaHeight = areaLeftBottomPoint[1] - areaLeftTopPoint[1];
+        var boxWidth = boxRightTopPoint[0] - boxLeftTopPoint[0];
+        var boxHeight = boxLeftBottomPoint[1] - boxLeftTopPoint[1];
+        var boxTanAngle = (boxRightTopPoint[1] - boxLeftTopPoint[1]) / boxWidth;
 
-        var symbolWidth = areaWidth * 0.12;
-        var symbolHeight = areaHeight;
-        var symbolsGap = areaWidth * 0.035;
+        var gapWidth = boxWidth * 0.04;
+        var charWidth = (boxWidth - 8 * gapWidth) / 4;
+        var charHeight = boxHeight;
+        var charThickness = charWidth / 5.0;
+        
+        var reperPoint = boxLeftTopPoint;
 
-        dc.setColor(_foregroundColor, _backgroundColor);
         for (var i = 0; i < chars.size(); ++i) {
-            var k = i * (symbolsGap + symbolWidth) / areaWidth;
-            var reperPoint = [
-                areaLeftTopPoint[0] + k * (areaRightTopPoint[0] - areaLeftTopPoint[0]),
-                areaLeftTopPoint[1] + k * (areaRightTopPoint[1] - areaLeftTopPoint[1])
-            ];
-            var symbolPoints = LyatskiyTeamWatchFaceLogo.getAngledSymbolPoints(
-                chars[i][0],
-                symbolWidth,
-                symbolHeight,
-                symbolWidth / chars[i][1],
+            var char = chars[i];
+            var width;
+
+            if (char.equals("")) {
+                width = gapWidth;
+            } else {
+                width = charWidth;
+                _drawAngledChar(
+                    dc,
+                    chars[i],
+                    charWidth,
+                    charHeight,
+                    charThickness,
+                    reperPoint,
+                    _foregroundColor
+                );
+            }
+            
+            reperPoint[0] += width;
+            reperPoint[1] += width * boxTanAngle;
+        }
+    }
+
+    private function _drawAngledChar(
+        dc as Graphics.Dc,
+        char as String,
+        charWidth as Numeric, 
+        charHeight as Numeric, 
+        charThickness as Numeric, 
+        reperPoint as LyatskiyTeamWatchFaceLogo.Point,
+        color as Graphics.ColorType
+    ) as Void {
+            var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
+            var charPoints = LyatskiyTeamWatchFaceLogo.getAngledCharPoints(
+                char,
+                charWidth,
+                charHeight,
+                charThickness,
                 logo.getParamAlpha());
 
-            LyatskiyTeamWatchFaceLogo.shiftPoints(symbolPoints, reperPoint[0], reperPoint[1]);
-            dc.fillPolygon(symbolPoints);
-        }
+            LyatskiyTeamWatchFaceLogo.shiftPointsByPoint(charPoints, reperPoint);
+            
+            dc.setColor(color, _backgroundColor);
+            dc.fillPolygon(charPoints);
     }
 
     private function _drawBatteryIndicator(dc as Graphics.Dc) as Void {
         var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
 
-        // dc.setColor(Graphics.COLOR_RED, _backgroundColor);
-        // dc.drawLine(logo.getPoint(21)[0], logo.getPoint(21)[1], logo.getPoint(22)[0], logo.getPoint(22)[1]);
-        // dc.drawLine(logo.getPoint(21)[0], logo.getPoint(21)[1], logo.getPoint(24)[0], logo.getPoint(24)[1]);
-        // dc.drawLine(logo.getPoint(24)[0], logo.getPoint(24)[1], logo.getPoint(23)[0], logo.getPoint(23)[1]);
-        // dc.drawLine(logo.getPoint(22)[0], logo.getPoint(22)[1], logo.getPoint(23)[0], logo.getPoint(23)[1]);
-        // dc.drawCircle(logo.getCircleCenterPoint()[0], logo.getCircleCenterPoint()[1], logo.getRadius());
-    
         var areaLeftTopPoint = logo.getPoint(21);
         var areaRightTopPoint = logo.getPoint(22);
         var areaLeftBottomPoint = logo.getPoint(24);
@@ -217,46 +241,48 @@ class LyatskiyTeamWatchFaceView extends WatchUi.WatchFace {
         var areaWidth = areaRightTopPoint[0] - areaLeftTopPoint[0];
         var areaHeight = areaLeftBottomPoint[1] - areaLeftTopPoint[1];
 
-        var indicatorWidthRatio = 0.3;
-        var indicatorWidth = areaWidth * indicatorWidthRatio;
+        var indicatorWidth = areaWidth * _batteryIndicatorWidthRatio;
         var indicatorHeight = areaHeight;
+        var indicatorThinkness = indicatorHeight / 8;
 
         var indicatorReperPoint = [
-            areaLeftTopPoint[0] + (1 - indicatorWidthRatio) * (areaRightTopPoint[0] - areaLeftTopPoint[0]),
-            areaLeftTopPoint[1] + (1 - indicatorWidthRatio) * (areaRightTopPoint[1] - areaLeftTopPoint[1])
+            areaLeftTopPoint[0] + (1 - _batteryIndicatorWidthRatio) * (areaRightTopPoint[0] - areaLeftTopPoint[0]),
+            areaLeftTopPoint[1] + (1 - _batteryIndicatorWidthRatio) * (areaRightTopPoint[1] - areaLeftTopPoint[1])
         ];
 
         var batteryValue = System.getSystemStats().battery / 100.0;
-        var fillIndicatorPoints = LyatskiyTeamWatchFaceLogo.getAngledSymbolPoints(
-            '*',
-            indicatorWidth * batteryValue,
+        var fillIndicatorPoints = LyatskiyTeamWatchFaceLogo.getAngledCharPoints(
+            "*",
+            indicatorThinkness + (indicatorWidth - 2 * indicatorThinkness) * batteryValue,
             indicatorHeight,
             1,
             logo.getParamAlpha());
-        var indicatorPoints = LyatskiyTeamWatchFaceLogo.getAngledSymbolPoints(
-            '#',
+        var indicatorPoints = LyatskiyTeamWatchFaceLogo.getAngledCharPoints(
+            "#",
             indicatorWidth,
             indicatorHeight,
-            indicatorHeight / 8,
+            indicatorThinkness,
             logo.getParamAlpha());
 
         LyatskiyTeamWatchFaceLogo.shiftPoints(fillIndicatorPoints, indicatorReperPoint[0], indicatorReperPoint[1]);
         LyatskiyTeamWatchFaceLogo.shiftPoints(indicatorPoints, indicatorReperPoint[0], indicatorReperPoint[1]);
 
-        dc.setColor(Graphics.COLOR_RED, _backgroundColor);
+        dc.setColor(batteryValue < 0.1 ? _accentColor : _foregroundColor, _backgroundColor);
         dc.fillPolygon(fillIndicatorPoints);
+
         dc.setColor(_foregroundColor, _backgroundColor);
         dc.fillPolygon(indicatorPoints);
+    }
 
-        // var letterPoints = LyatskiyTeamWatchFaceLogo.getAngledSymbolPoints(
-        //     '7',
-        //     areaWidth / 10,
-        //     areaHeight,
-        //     areaWidth / 35,
-        //     logo.getParamAlpha());
+    private function _drawDebugLines(dc as Graphics.Dc) as Void {
+        var logo = _logo as LyatskiyTeamWatchFaceLogo.Logo;
 
-        // LyatskiyTeamWatchFaceLogo.shiftPoints(letterPoints, areaLeftTopPoint[0], areaLeftTopPoint[1]);
-        // dc.fillPolygon(letterPoints);
+        dc.setColor(_accentColor, _backgroundColor);
+        dc.drawLine(logo.getPoint(21)[0], logo.getPoint(21)[1], logo.getPoint(22)[0], logo.getPoint(22)[1]);
+        dc.drawLine(logo.getPoint(21)[0], logo.getPoint(21)[1], logo.getPoint(24)[0], logo.getPoint(24)[1]);
+        dc.drawLine(logo.getPoint(24)[0], logo.getPoint(24)[1], logo.getPoint(23)[0], logo.getPoint(23)[1]);
+        dc.drawLine(logo.getPoint(22)[0], logo.getPoint(22)[1], logo.getPoint(23)[0], logo.getPoint(23)[1]);
+        dc.drawCircle(logo.getCircleCenterPoint()[0], logo.getCircleCenterPoint()[1], logo.getRadius());
     }
 
     // Called when this View is removed from the screen. Save the

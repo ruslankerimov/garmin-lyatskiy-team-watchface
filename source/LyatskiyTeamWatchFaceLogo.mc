@@ -15,8 +15,6 @@ module LyatskiyTeamWatchFaceLogo {
         private var _paramA as Numeric;
         private var _paramAlpha as Numeric;
 
-        private var _dateAreaCharHeight as Numeric;
-        private var _dateAreaCharWidth as Numeric;
         private var _clockAreaCharWidth as Numeric;
         private var _clockAreaCharHeight as Numeric;
 
@@ -26,7 +24,6 @@ module LyatskiyTeamWatchFaceLogo {
             var k3 = params[:k3] as Numeric;
             var k4 = params[:k4] as Numeric;
             var k5 = params[:k5] as Numeric;
-            var k6 = params[:k6] as Numeric;
             var alpha = params[:alpha] as Numeric;
             var a = params[:a] as Numeric?;
 
@@ -42,17 +39,6 @@ module LyatskiyTeamWatchFaceLogo {
             var ctanAlpha = 1 / tanAlpha;
             var sinAlpha = Math.sin(alphaInRadian);
             var cosecAlpha = 1 / sinAlpha;
-            
-            var radiusByParamA = (0.5 * (1 + k1) * (1 + k1)) / (k2 + ctanAlpha + ctanAlpha * k1) +
-                0.5 * (k2 + ctanAlpha + ctanAlpha * k1);
-
-            var dataAreaHeight = k5 * 2 * k1 * ctanAlpha;
-            // var dataAreaWidth = ((2 * k1 + 1) * ctanAlpha - k4 - dataAreaHeight) * tanAlpha - k4;
-
-            _dateAreaCharHeight = dataAreaHeight;
-            // _dateAreaCharWidth = (dataAreaWidth - 4 * k4) / 5;
-            _dateAreaCharWidth = 0.5 * _dateAreaCharHeight;
-
 
             var b = a * k1;
             var c = a * k2;
@@ -70,10 +56,11 @@ module LyatskiyTeamWatchFaceLogo {
             var s = a * k4;
             var n = a * k5;
             var p = s * cosecAlpha;
-            var r = radiusByParamA * a;
+            var r = (0.5 * (1 + k1) * (1 + k1)) * a / (k2 + ctanAlpha + ctanAlpha * k1) +
+                0.5 * a * (k2 + ctanAlpha + ctanAlpha * k1);
             var t = (Math.sqrt(r * r - (n + p + c - r) * (n + p + c - r) + r * r * ctanAlpha * ctanAlpha) - ctanAlpha * (n + p + c - r)) / 
                 (1 + ctanAlpha * ctanAlpha);
-
+            var v = (f - n - p) * tanAlpha;
 
             _clockAreaCharWidth = j;
             _clockAreaCharHeight = i;
@@ -95,7 +82,7 @@ module LyatskiyTeamWatchFaceLogo {
                 [w, e],                                                                         // P13
                 [w, 0],                                                                         // P14
 
-                [m, h - radiusByParamA],                                                        // P15
+                [m, h - r],                                                                     // P15
                 [m, h / 2],                                                                     // P16
                 
                 [                                                                               // P17
@@ -130,6 +117,14 @@ module LyatskiyTeamWatchFaceLogo {
                 [                                                                               // P24
                     a + s, 
                     d + 2 * l - p - s * ctanAlpha
+                ],
+                [                                                                               // P25
+                    m + v, 
+                    0
+                ],
+                [                                                                               // P26
+                    m + v, 
+                    n
                 ]
             ];
         }
@@ -142,9 +137,6 @@ module LyatskiyTeamWatchFaceLogo {
             var scale = value / _paramA;
 
             _paramA = value;
-            
-            _dateAreaCharHeight *= scale;
-            _dateAreaCharWidth *= scale;
 
             _clockAreaCharWidth *= scale;
             _clockAreaCharHeight *= scale;
@@ -204,8 +196,8 @@ module LyatskiyTeamWatchFaceLogo {
         }
 
         function getDigitPointsInClockArea(digit as Number, position as Number, thickness as Numeric) as Points {
-            var points = getAngledSymbolPoints(
-                digit.toString().toCharArray()[0], 
+            var points = getAngledCharPoints(
+                digit.toString(), 
                 _clockAreaCharWidth,
                 _clockAreaCharHeight,
                 _clockAreaCharWidth / thickness, // TODO
@@ -217,23 +209,6 @@ module LyatskiyTeamWatchFaceLogo {
                 reperPoint[0],
                 reperPoint[1]);
             
-            return points;
-        }
-
-        function getSymbolPointsInDateArea(symbol as Char, position as Number, thickness as Numeric) as Points {
-            var points = getAngledSymbolPoints(
-                symbol,
-                _dateAreaCharWidth,
-                _dateAreaCharHeight,
-                thickness,
-                _paramAlpha);
-            var reperPoint = _points[19 + position];
-
-            shiftPoints(
-                points,
-                reperPoint[0],
-                reperPoint[1]);
-
             return points;
         }
     }
@@ -288,6 +263,10 @@ module LyatskiyTeamWatchFaceLogo {
         return logo;
     }
 
+    function shiftPointsByPoint(points as Points, point as Point) as Void {
+        shiftPoints(points, point[0], point[1]);
+    }
+
     function shiftPoints(points as Points, sx as Numeric, sy as Numeric) as Void {
         for (var i = 0; i < points.size(); ++i) {
             points[i][0] += sx;
@@ -302,12 +281,12 @@ module LyatskiyTeamWatchFaceLogo {
         }
     }
 
-    function getSymbolPoints(symbol as Char, width as Numeric, height as Numeric, thickness as Numeric) as Points {
+    function getCharPoints(char as String, width as Numeric, height as Numeric, thickness as Numeric) as Points {
         var points;
         var a = thickness;
 
-        switch (symbol) {
-            case '0':
+        switch (char) {
+            case "0":
                 points = [
                     [0, 0],
                     [0, height],
@@ -321,15 +300,39 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, 0]
                 ];
                 break;
-            case '1':
+            // case '1':
+            //     points = [
+            //         [width - a, 0],
+            //         [width - a, height],
+            //         [width, height],
+            //         [width, 0]
+            //     ];
+            //     break;
+            case "1":
                 points = [
-                    [width - a, 0],
-                    [width - a, height],
+                    [width / 2 - a, 0],
+                    [width / 2 - a, a],
+                    [width / 2 - a / 2, a],
+                    [width / 2 - a / 2, height - a],
+                    [0, height - a],
+                    [0, height],
                     [width, height],
-                    [width, 0]
+                    [width, height - a],
+                    [width / 2 + a / 2, height - a],
+                    [width / 2 + a / 2, 0]
                 ];
                 break;
-            case '2':
+            // case '1':
+            //     points = [
+            //         [0, 0],
+            //         [0, a],
+            //         [width / 2 - a / 2, a],
+            //         [width / 2 - a / 2, height],
+            //         [width / 2 + a / 2, height],
+            //         [width / 2 + a / 2, 0]
+            //     ];
+            //     break;
+            case "2":
                 points = [
                     [0, 0],
                     [0, a],
@@ -345,7 +348,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case '3':
+            case "3":
                 points = [
                     [0, 0],
                     [0, a],
@@ -361,7 +364,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case '4':
+            case "4":
                 points = [
                     [0, 0],
                     [0, height / 2 + a / 2],
@@ -375,7 +378,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, 0]
                 ];
                 break;
-            case '5':
+            case "5":
                 points = [
                     [0, 0],
                     [0, height / 2 + a / 2],
@@ -391,7 +394,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case '6':
+            case "6":
                 points = [
                     [0, 0],
                     [0, height],
@@ -407,7 +410,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case '7':
+            case "7":
                 points = [
                     [0, 0],
                     [0, a],
@@ -417,7 +420,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case '8':
+            case "8":
                 points = [
                     [0, height / 2 + a / 2],
                     [0, height],
@@ -435,7 +438,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, height / 2 + a / 2]
                 ];
                 break;
-            case '9':
+            case "9":
                 points = [
                     [0, height],
                     [width, height],
@@ -451,7 +454,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [0, height - a]
                 ];
                 break;
-            case 'п':
+            case "п":
                 points = [
                     [0, 0],
                     [0, height],
@@ -463,7 +466,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case 'н':
+            case "н":
                 points = [
                     [0, 0],
                     [0, height],
@@ -479,7 +482,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, 0]
                 ];
                 break;
-            case 'т':
+            case "т":
                 points = [
                     [0, 0],
                     [0, a],
@@ -491,7 +494,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case 'с':
+            case "с":
                 points = [
                     [0, 0],
                     [0, height],
@@ -503,7 +506,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case 'р':
+            case "р":
                 points = [
                     [0, a],
                     [0, height],
@@ -519,7 +522,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, a]
                 ];
                 break;
-            case 'ч':
+            case "ч":
                 points = [
                     [0, 0],
                     [0, height / 2 + a / 2],
@@ -533,7 +536,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, 0]
                 ];
                 break;
-            case 'в':
+            case "в":
                 points = [
                     [0, height / 2 + a / 2],
                     [0, height],
@@ -556,7 +559,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, height / 2 + a / 2]
                 ];
                 break;
-            case 'б':
+            case "б":
                 points = [
                     [0, 0],
                     [0, height],
@@ -572,7 +575,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [width, 0]
                 ];
                 break;
-            case '#':
+            case "#":
                 points = [
                     [a, 0],
                     [width, 0],
@@ -591,7 +594,7 @@ module LyatskiyTeamWatchFaceLogo {
                     [a, 0]
                 ];
                 break;
-            case '*':
+            case "*":
                 points = [
                     [0, 0],
                     [0, height],
@@ -606,11 +609,11 @@ module LyatskiyTeamWatchFaceLogo {
         return points;
     }
 
-    function getAngledSymbolPoints(symbol as Char, width as Numeric, height as Numeric, thickness as Numeric, alpha as Numeric) as Points {
+    function getAngledCharPoints(char as String, width as Numeric, height as Numeric, thickness as Numeric, alpha as Numeric) as Points {
         var alphaInRadian = ONE_DEGREE_IN_RADIAN * alpha; 
         var scaleCoef = 1 / Math.sin(alphaInRadian); // TODO cached
         var slideCoef = 1 / Math.tan(alphaInRadian);
-        var points = getSymbolPoints(symbol, width, height / scaleCoef, thickness);
+        var points = getCharPoints(char, width, height / scaleCoef, thickness);
 
         for (var i = 0; i < points.size(); ++i) {
             points[i][1] = (points[i][1] - points[i][0] * slideCoef) * scaleCoef;

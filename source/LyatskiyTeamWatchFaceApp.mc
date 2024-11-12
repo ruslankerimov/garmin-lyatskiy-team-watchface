@@ -2,7 +2,7 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-const DEBUG = 1;
+const DEBUG = true;
 
 class LyatskiyTeamWatchFaceApp extends Application.AppBase {
 
