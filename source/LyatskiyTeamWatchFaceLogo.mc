@@ -310,8 +310,8 @@ module LyatskiyTeamWatchFaceLogo {
             //     break;
             case "1":
                 points = [
-                    [width / 2 - a, 0],
-                    [width / 2 - a, a],
+                    [width / 4 - a / 4, 0],
+                    [width / 4 - a / 4, a],
                     [width / 2 - a / 2, a],
                     [width / 2 - a / 2, height - a],
                     [0, height - a],

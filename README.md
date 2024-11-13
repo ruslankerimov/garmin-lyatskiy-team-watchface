@@ -9,4 +9,5 @@ See https://developer.garmin.com/connect-iq
 - add debug info
 - add digits in battery indicator
 - adaptive for square screen (920xt)
+- luncher icon
 - add Makefile
