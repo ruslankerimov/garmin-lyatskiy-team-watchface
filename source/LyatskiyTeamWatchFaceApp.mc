@@ -6,6 +6,8 @@ const DEBUG = true;
 
 class LyatskiyTeamWatchFaceApp extends Application.AppBase {
 
+    var _view as LyatskiyTeamWatchFaceView?;
+
     function initialize() {
         AppBase.initialize();
     }
@@ -20,11 +22,14 @@ class LyatskiyTeamWatchFaceApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new LyatskiyTeamWatchFaceView() ];
+        _view = new LyatskiyTeamWatchFaceView();
+
+        return [ _view ];
     }
 
     // New app settings have been received so trigger a UI update
     function onSettingsChanged() as Void {
+        (_view as LyatskiyTeamWatchFaceView).handleSettingsChanged();
         WatchUi.requestUpdate();
     }
 

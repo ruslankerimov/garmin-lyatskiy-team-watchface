@@ -1,8 +1,81 @@
 <strings>
     <string id="AppName">lyatskiy-team-watch-face</string>
 
-    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="ColorsTitle">Colors settings</string>
+    <string id="ColorsDescription"></string>
 
-    <string id="ColorBlack">Black</string>
-    <string id="ColorWhite">White</string>
+    <string id="BackgroundColorTitle">Background color</string>
+    <string id="PrimaryColorTitle">Primary color</string>
+    <string id="AccentColorTitle">Accent color</string>LetterLColorTitle
+    <string id="LetterLColorTitle">Letter L color</string>
+    <string id="LetterTColorTitle">Letter T color</string>
+    <string id="HoursColorTitle">Hours color</string>
+    <string id="MinutesColorTitle">Minutes color</string>
+    <string id="SecondsColorTitle">Seconds color</string>
+
+    <string id="ColorPrimaryColor">Primary color</string>
+
+    <!-- See `COLORS` constant in `LyatskiyTeamWatchFaceView.mc`  -->
+    <string id="Color0">Black</string>
+    <string id="Color1">White</string>
+    <string id="Color2">Red</string>
+    <string id="Color3">Dark Red</string>
+    <string id="Color4">Light Gray</string>
+    <string id="Color5">Dark Gray</string>
+    <string id="Color6">Blue</string>
+    <string id="Color7">Dark Blue</string>
+    <string id="Color8">Green</string>
+    <string id="Color9">Dark Green</string>
+    <string id="Color10">Purple</string>
+    <string id="Color11">Pink</string>
+    <string id="Color12">Orange</string>
+    <string id="Color13">Yellow</string>
+
+    <string id="SizesTitle">Logo sizes settings</string>
+    <string id="SizesDescription">Сhange with caution!!!</string>
+
+    <string id="LogoParamK1Title">Width of T letter</string>
+    <string id="LogoParamK1Prompt">from 0.5 to 5</string>
+
+    <string id="LogoParamK2Title">Height of T letter</string>
+    <string id="LogoParamK2Prompt">from 1 to 10</string>
+
+    <string id="LogoParamK3Title">Height of data box</string>
+    <string id="LogoParamK3Prompt">from 0 to 2</string>
+
+    <string id="LogoParamK4Title">Height of status box</string>
+    <string id="LogoParamK4Prompt">from 0 to 2</string>
+
+    <string id="ScreenPaddingTitle">Screen padding</string>
+    <string id="ScreenPaddingPrompt">from 0 to 0.2</string>
+
+    <string id="ErrorMessageForInput">Please enter a valid value</string>
+
+
+    <string id="ShowSecondsTitle">Show seconds</string>
+    <string id="SecondsTitle">Seconds settings</string>
+    <string id="SecondsDescription"></string>
+
+    <string id="SecondsLayoutTitle">Seconds layout</string>
+    <string id="SecondsLayoutPrompt">Seconds layout prompt</string>
+
+    <string id="SecondsLayout0">Layout 1</string>
+    <string id="SecondsLayout1">Layout 2</string>
+    <string id="SecondsLayout2">Layout 3</string>
+    <string id="SecondsLayout3">Layout 4</string>
+    <string id="SecondsLayout4">Layout 5</string>
+
+
+    <string id="CharsTitle">Chars settings</string>
+    <string id="CharsDescription"></string>
+    <string id="HoursCharThicknessTitle">Thickness of chars in hours box</string>
+    <string id="HoursCharThicknessPrompt">from 0.05 to 0.5</string>
+    <string id="MinutesCharThicknessTitle">Thickness of chars in minutes box</string>
+    <string id="MinutesCharThicknessPrompt">from 0.05 to 0.5</string>
+    <string id="SecondsCharThicknessTitle">Thickness of chars in seconds box</string>
+    <string id="SecondsCharThicknessPrompt">from 0.05 to 0.5</string>
+    <string id="DataBoxCharThicknessTitle">Thickness of chars in data box</string>
+    <string id="DataBoxCharThicknessPrompt">from 0.05 to 0.5</string>
+    <string id="StatusBoxCharThicknessTitle">Thickness of chars in status box</string>
+    <string id="StatusBoxCharThicknessPrompt">from 0.05 to 0.5</string>
 </strings>

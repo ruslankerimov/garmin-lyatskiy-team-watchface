@@ -1,3 +1,27 @@
 <properties>
-    <property id="BackgroundColor" type="number">0xFFFFFF</property>
+    <property id="BackgroundColor" type="number">1</property>
+    <property id="PrimaryColor" type="number">0</property>
+    <property id="AccentColor" type="number">2</property>
+    <property id="LetterLColor" type="number">0</property>
+    <property id="LetterTColor" type="number">2</property>
+    <property id="HoursColor" type="number">-1</property>
+    <property id="MinutesColor" type="number">-1</property>
+    <property id="SecondsColor" type="number">-1</property>
+
+    <property id="LogoParamK1" type="float">1.5</property>
+    <property id="LogoParamK2" type="float">4.5</property>
+    <property id="LogoParamK3" type="float">1</property>
+    <property id="LogoParamK4" type="float">0.5</property>
+
+    <property id="HoursCharThickness" type="float">0.3</property>
+    <property id="MinutesCharThickness" type="float">0.3</property>
+    <property id="SecondsCharThickness" type="float">0.3</property>
+    <property id="DataBoxCharThickness" type="float">0.3</property>
+    <property id="StatusBoxCharThickness" type="float">0.3</property>
+
+    <!-- TODO change in percent -->
+    <property id="ScreenPadding" type="float">0.05</property>
+
+    <property id="ShowSeconds" type="boolean">false</property>
+    <property id="SecondsLayout" type="number">0</property>
 </properties>

@@ -1,8 +1,206 @@
 <settings>
-    <setting propertyKey="@Properties.BackgroundColor" title="@Strings.BackgroundColorTitle">
-        <settingConfig type="list">
-            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
-        </settingConfig>
+    <group id="colors" title="@Strings.ColorsTitle" description="@Strings.ColorsDescription">
+        <setting propertyKey="@Properties.BackgroundColor" title="@Strings.BackgroundColorTitle">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.PrimaryColor" title="@Strings.PrimaryColorTitle">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.AccentColor" title="@Strings.AccentColorTitle">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.ColorPrimaryColor</listEntry>
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.HoursColor" title="@Strings.HoursColorTitle">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.ColorPrimaryColor</listEntry>
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.MinutesColor" title="@Strings.MinutesColorTitle">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.ColorPrimaryColor</listEntry>
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.SecondsColor" title="@Strings.SecondsColorTitle">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.ColorPrimaryColor</listEntry>
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.LetterLColor" title="@Strings.LetterLColorTitle">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.ColorPrimaryColor</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.LetterTColor" title="@Strings.LetterTColorTitle">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.ColorPrimaryColor</listEntry>
+                <listEntry value="0">@Strings.Color0</listEntry>
+                <listEntry value="1">@Strings.Color1</listEntry>
+                <listEntry value="2">@Strings.Color2</listEntry>
+                <listEntry value="3">@Strings.Color3</listEntry>
+                <listEntry value="4">@Strings.Color4</listEntry>
+                <listEntry value="5">@Strings.Color5</listEntry>
+                <listEntry value="6">@Strings.Color6</listEntry>
+                <listEntry value="7">@Strings.Color7</listEntry>
+                <listEntry value="8">@Strings.Color8</listEntry>
+                <listEntry value="9">@Strings.Color9</listEntry>
+                <listEntry value="10">@Strings.Color10</listEntry>
+                <listEntry value="11">@Strings.Color11</listEntry>
+                <listEntry value="12">@Strings.Color12</listEntry>
+                <listEntry value="13">@Strings.Color13</listEntry>
+            </settingConfig>
+        </setting>
+    </group>
+
+    <group id="sizes" title="@Strings.SizesTitle" description="@Strings.SizesDescription">
+        <setting propertyKey="@Properties.LogoParamK1" title="@Strings.LogoParamK1Title" prompt="@Strings.LogoParamK1Prompt">
+            <settingConfig type="numeric" min="0.5" max="5" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.LogoParamK2" title="@Strings.LogoParamK2Title" prompt="@Strings.LogoParamK2Prompt">
+            <settingConfig type="numeric" min="1" max="10" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.LogoParamK3" title="@Strings.LogoParamK3Title" prompt="@Strings.LogoParamK3Prompt">
+            <settingConfig type="numeric" min="0" max="2" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.LogoParamK4" title="@Strings.LogoParamK4Title" prompt="@Strings.LogoParamK4Prompt">
+            <settingConfig type="numeric" min="0" max="2" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.ScreenPadding" title="@Strings.ScreenPaddingTitle" prompt="@Strings.ScreenPaddingPrompt">
+            <settingConfig type="numeric" min="0" max="0.2" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+    </group>
+
+    <setting propertyKey="@Properties.ShowSeconds" title="@Strings.ShowSecondsTitle" >
+        <settingConfig type="boolean" />
     </setting>
+
+    <group id="seconds" title="@Strings.SecondsTitle" description="@Strings.SecondsDescription" enableIfTrue="@Properties.ShowSeconds">
+        <setting propertyKey="@Properties.SecondsLayout" title="@Strings.SecondsLayoutTitle" prompt="@Strings.SecondsLayoutPrompt">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.SecondsLayout0</listEntry>
+                <listEntry value="1">@Strings.SecondsLayout1</listEntry>
+                <listEntry value="2">@Strings.SecondsLayout2</listEntry>
+                <listEntry value="3">@Strings.SecondsLayout3</listEntry>
+                <listEntry value="4">@Strings.SecondsLayout4</listEntry>
+            </settingConfig>
+        </setting>
+    </group>
+
+    <group id="chars" title="@Strings.CharsTitle" description="@Strings.CharsDescription">
+        <setting propertyKey="@Properties.HoursCharThickness" title="@Strings.HoursCharThicknessTitle" prompt="@Strings.HoursCharThicknessPrompt">
+            <settingConfig type="numeric" min="0.05" max="0.5" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.MinutesCharThickness" title="@Strings.MinutesCharThicknessTitle" prompt="@Strings.MinutesCharThicknessPrompt">
+            <settingConfig type="numeric" min="0.05" max="0.5" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.SecondsCharThickness" title="@Strings.SecondsCharThicknessTitle" prompt="@Strings.SecondsCharThicknessPrompt">
+            <settingConfig type="numeric" min="0.05" max="0.5" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.DataBoxCharThickness" title="@Strings.DataBoxCharThicknessTitle" prompt="@Strings.DataBoxCharThicknessPrompt">
+            <settingConfig type="numeric" min="0.05" max="0.5" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+        <setting propertyKey="@Properties.StatusBoxCharThickness" title="@Strings.StatusBoxCharThicknessTitle" prompt="@Strings.StatusBoxCharThicknessPrompt">
+            <settingConfig type="numeric" min="0.05" max="0.5" errorMessage="@Strings.ErrorMessageForInput" />
+        </setting>
+    </group>
+
 </settings>
